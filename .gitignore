@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+ENV/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+farewell.db
+backend/farewell.db
+
+# Storage & Uploads (sensitive user photos and generated thumbnails)
+backend/storage/photos/*
+backend/storage/thumbnails/*
+backend/storage/crops/*
+!backend/storage/photos/.gitkeep
+!backend/storage/thumbnails/.gitkeep
+!backend/storage/crops/.gitkeep
+
+# Large AI Model weights (auto-downloaded by pipeline on startup if missing)
+backend/models/*.onnx
+!backend/models/.gitkeep
+
+# Local farewell DSLR raw photographs (550+ heavy RAW files in root)
+*.JPG
+*.jpg
+*.jpeg
+*.png
+*.webp
+CLIP/
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+
+# OS files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
